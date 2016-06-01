@@ -1,5 +1,5 @@
 void setup() {
-  pinMode(3, OUTPUT);// Definimos pin 13 como salida.
+  pinMode(3, OUTPUT);// Definimos pin 3 como salida.
 }
 
 void loop() {
