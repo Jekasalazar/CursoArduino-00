@@ -1,15 +1,17 @@
+int bombillo = 2;
+
 void setup() {
   Serial.begin(9600);
-  pinMode(A0,INPUT);
-  pinMode(2,OUTPUT);
+  pinMode(A0, INPUT);
+  pinMode(bombillo, OUTPUT);
 }
 
 void loop() {
   int valor = analogRead(A0);
   Serial.println(valor);
   if(valor < 512){
-    digitalWrite(2,HIGH);
+    digitalWrite(bombillo,HIGH);
   }else{
-    digitalWrite(1,LOW);
+    digitalWrite(bombillo,LOW);
   }
 }
