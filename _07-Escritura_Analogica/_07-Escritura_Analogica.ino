@@ -21,7 +21,7 @@ void loop() {
  analogWrite(ledVerde, estadoVerde);
  analogWrite(ledRojo, estadoRojo);
  estadoAzul = estadoAzul + aumentoAzul;
- estadoVerde = estadoVerde + aumemtoVerde;
+ estadoVerde = estadoVerde + aumentoVerde;
  estadoRojo = estadoRojo + aumentoRojo;
  if(estadoAzul > 255){
   aumentoAzul = aumentoAzul * -1;
