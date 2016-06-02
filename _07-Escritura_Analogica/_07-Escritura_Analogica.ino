@@ -23,13 +23,13 @@ void loop() {
  estadoAzul = estadoAzul + aumentoAzul;
  estadoVerde = estadoVerde + aumentoVerde;
  estadoRojo = estadoRojo + aumentoRojo;
- if(estadoAzul > 255){
+ if(estadoAzul > 255 || estadoAzul < 0){
   aumentoAzul = aumentoAzul * -1;
  }
- if(estadoVerde > 255){
+ if(estadoVerde > 255 || estadoVerde < 0){
   aumentoVerde = aumentoVerde * -1;
  }
- if(estadoRojo > 255){
+ if(estadoRojo > 255 || estadoRojo<0){
   aumentoRojo = aumentoRojo * -1;
  }
  delay(5);
