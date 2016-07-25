@@ -1,14 +1,16 @@
+const int pinSalida = 13;
+const int pinEntrada = 2;
 void setup() {
-  pinMode(3, OUTPUT);// Definimos pin 3 como salida.
-  pinMode(2,INPUT_PULLUP); //Definimos el pin 2 como entrada y que cuando este desconectado marque como encendida
+  pinMode(pinSalida, OUTPUT);// Definimos pin 13 como salida.
+  pinMode(pinEntrada,INPUT_PULLUP); //Definimos el pin 2 como entrada y que cuando este desconectado marque como encendida
 }
 
 void loop() {
-  bool entrada = digitalRead(2);
+  bool entrada = digitalRead(pinEntrada);
   if(entrada == LOW){
-    digitalWrite(3, HIGH);   // Encendomos la salida
-    delay(1;              // Esperamos 1000 milisegundos(1 segundo)
-    digitalWrite(3, LOW);    // Apagamos la salida
+    digitalWrite(pinSalida, HIGH);   // Encendomos la salida
+    delay(1000);              // Esperamos 1000 milisegundos(1 segundo)
+    digitalWrite(pinSalida, LOW);    // Apagamos la salida
     delay(5);               // Esperamos 500 milisegundos(1/2 segundo) 
   }
 }

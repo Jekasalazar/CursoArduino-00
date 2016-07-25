@@ -1,4 +1,4 @@
-int bombillo = 2;
+const int bombillo = 2;
 
 void setup() {
   Serial.begin(9600);
